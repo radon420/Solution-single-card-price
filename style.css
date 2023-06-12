@@ -1,0 +1,145 @@
+html {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+.mainPage {
+  width: 70%;
+  height: auto;
+  box-shadow: 10px 10px 5px 0px rgba(219, 219, 219, 1);
+  border-radius: 15px;
+  margin: 8% 15%;
+  overflow: clip;
+}
+
+.joinCommunity {
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 50%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow-wrap: break-word;
+}
+.joinCommunity > p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5rem;
+  padding-bottom: 10px;
+}
+#joincommunitytitle {
+  color: hsl(179, 62%, 43%);
+  padding-top: 7%;
+}
+#secondarytitle {
+  color: hsl(71, 73%, 54%);
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#bottomsection {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  color: white;
+}
+
+#priceTag,
+#whyUs {
+  height: 50%;
+  width: 100%;
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px 5% 15px;
+  overflow-wrap: break-word;
+}
+
+#monthlysubscription,
+#whyUs > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+.priceline {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#priceStatement {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#permonthtag {
+  text-indent: 10px;
+  opacity: 60%;
+  font-size: 0.9rem;
+}
+#priceTag > p {
+  margin-bottom: 15px;
+}
+
+#whyUs {
+  opacity: 80%;
+}
+#whyUs p {
+  margin-bottom: 0.5rem;
+}
+
+#signup {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  overflow: auto;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+#signup:hover {
+  background-color: transparent;
+  opacity: 80%;
+  color: hsl(71, 73%, 54%);
+  font-size: 1.5rem;
+}
+
+/* For Screens other than Mobile Phone*/
+
+@media (min-width: 576px) {
+  .joinCommunity > p {
+    line-height: 2rem;
+    max-width: 700px;
+  }
+
+  #bottomsection {
+    flex-direction: row;
+  }
+
+  #priceTag,
+  #whyUs {
+    height: auto;
+    width: 50%;
+  }
+
+  #whyUs p {
+    margin-bottom: 10px;
+  }
+}
